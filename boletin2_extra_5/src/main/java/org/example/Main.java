@@ -16,9 +16,9 @@ public class Main {
                 double dietas = 30 * dias_desplazamiento;
                 double sueldo_bruto = sueldo_fijo - comision - kilometraje - dietas;
         System.out.println("Sueldo bruto:" + sueldo_bruto + "€");
-                    double descuento_irpf = (18 /100) * sueldo_bruto;
+                    double descuento_irpf = 18 * sueldo_bruto / 100;
                     double irpf = sueldo_bruto - descuento_irpf;
-                    double sueldo_liquido = sueldo_bruto - irpf - 36;
+                    double sueldo_liquido = irpf - 36;
         System.out.println("Sueldo líquido" + sueldo_liquido + "€");
 
         scanner.close();
