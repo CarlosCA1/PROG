@@ -18,7 +18,7 @@ public class Main {
         System.out.println("Sueldo bruto:" + sueldo_bruto + "€");
                     double descuento_irpf = (18 /100) * sueldo_bruto;
                     double irpf = sueldo_bruto - descuento_irpf;
-                    double sueldo_liquido = sueldo_bruto - descuento_irpf - 36;
+                    double sueldo_liquido = sueldo_bruto - irpf - 36;
         System.out.println("Sueldo líquido" + sueldo_liquido + "€");
 
         scanner.close();
