@@ -7,8 +7,8 @@ public class Main {
             double celsius = scanner.nextDouble();
                 double fahrenheit = (celsius * 9 / 5) + 32;
                 double kelvin = celsius + 273.15;
-        System.out.println("Temperatura en Fahrenheit: " + fahrenheit);
-        System.out.println("Temperatura en Kelvin: " + kelvin);
+        System.out.println("Temperatura en Fahrenheit: " + fahrenheit + "ºF");
+        System.out.println("Temperatura en Kelvin: " + kelvin + "K");
         scanner.close();
     }
 }
