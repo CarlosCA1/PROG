@@ -15,7 +15,7 @@ public class Main {
                 double billetes20_en_euros = billetes20 * 20;
                 double billetes5_en_euros = billetes5 * 5;
                 double cantidad_en_euros = billetes100_en_euros + billetes20_en_euros + billetes5_en_euros + monedas1;
-        System.out.println("Cantidad en euros: " + cantidad_en_euros);
+        System.out.println("Cantidad en euros: " + cantidad_en_euros + "€");
         scanner.close();
     }
 }
