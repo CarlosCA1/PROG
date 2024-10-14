@@ -6,14 +6,14 @@ public class Main {
 
         System.out.print("Nombre de la persona 1: ");
         String nombre1 = scanner.nextLine();
-        System.out.print("Peso de " + nombre1 + "(kg): ");
+        System.out.print("Peso de " + nombre1 + " (kg): ");
         double peso1 = scanner.nextDouble();
 
         scanner.nextLine();
 
         System.out.print("Nombre de la persona 2: ");
         String nombre2 = scanner.nextLine();
-        System.out.print("Peso de " + nombre2 + "(kg): ");
+        System.out.print("Peso de " + nombre2 + " (kg): ");
         double peso2 = scanner.nextDouble();
 
 
