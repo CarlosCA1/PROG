@@ -1,3 +1,4 @@
+package org.example;
 import java.util.Scanner;
 
 public class Boletin_2_extra_2 {
