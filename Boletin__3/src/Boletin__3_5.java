@@ -1,5 +1,12 @@
 package org.example;
 import java.util.Scanner;
+
+/**
+ * De 3 números, imprime el mayor
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class Boletin__3_5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
