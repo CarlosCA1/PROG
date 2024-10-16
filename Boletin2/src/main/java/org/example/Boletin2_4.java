@@ -1,3 +1,4 @@
+package org.example;
 import java.util.Scanner;
 public class Boletin2_4 {
     public static void main(String[] args) {
