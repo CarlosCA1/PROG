@@ -2,7 +2,7 @@ package org.example;
 import java.util.Scanner;
 
 /**
- * De 3 números, imprime el mayor
+ * De 3 números introducidos por consola, imprime el mayor
  * @version 1.0
  * @author Carlos Costas
  */

@@ -2,7 +2,7 @@ package org.example;
 import java.util.Scanner;
 
 /**
- * Imprime el nombre y el peso que introduzcamos de la persona más pesada
+ * Imprime el nombre y el peso que introduzcamos por consola de la persona más pesada
  * @version 1.0
  * @author Carlos Costas
  */
