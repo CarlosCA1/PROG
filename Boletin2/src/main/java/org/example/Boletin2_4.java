@@ -1,5 +1,12 @@
 package org.example;
 import java.util.Scanner;
+
+/**
+ * Le 2 números e calcula : 1º a suma , despois a resta, a continuación o producto e por último o cociente. Amosa o resultado de cada operación.
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class Boletin2_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
