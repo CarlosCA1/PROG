@@ -1,6 +1,12 @@
 package org.example;
 import java.util.Scanner;
 
+/**
+ * Recibe como dato de entrada o valor dunha temperatura expresada en graos centígrados e calcula o seu equivalente en graos Fahrenheit e graos Kelvin.
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class Boletin_2_extra_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -1,6 +1,19 @@
 package org.example;
 import java.util.Scanner;
 
+/**
+ * Calcula o soldo bruto e líquido, a percibir por unha persoa. Para iso hai que ter en conta, que o soldo total inclúe os seguintes conceptos:
+ * Soldo fixo.
+ * Comisión: 5% sobre importe total de vendas
+ * Quilometraxe: 2 € por km
+ * Dietas: 30 € por día de desprazamento.
+ * Para calcular o soldo líquido debemos descontarlle ao soldo bruto:
+ * I.R.P.F. = 18 % do soldo total.
+ * Retención a seguridade social : 36 €.
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class Boletin_2_extra_5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

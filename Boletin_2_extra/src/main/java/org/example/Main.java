@@ -1,6 +1,12 @@
 package org.example;
 import java.util.Scanner;
 
+/**
+ * Saca por pantalla a porcentaxe descontada nunha compra. Introducindo, por teclado, o prezo da tarifa e o prezo pagado.
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

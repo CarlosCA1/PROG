@@ -1,6 +1,12 @@
 package org.example;
 import java.util.Scanner;
 
+/**
+ * Converte unha cantidade enteira de diñeiro, que está presentada en billetes de 100, 20, 5 e moedas de 1 €, no seu equivalente en euros.
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class Boletin_2_extra_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

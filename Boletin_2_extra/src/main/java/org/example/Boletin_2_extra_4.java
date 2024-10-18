@@ -1,6 +1,12 @@
 package org.example;
 import java.util.Scanner;
 
+/**
+ * Lee, dende o teclado, unha cantidade enteira en euros e amosa, por pantalla, o seu desglose en billetes de 100, 20, 5 e moedas de 1 €.
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class Boletin_2_extra_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
