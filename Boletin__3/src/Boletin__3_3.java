@@ -1,5 +1,12 @@
 package org.example;
 import java.util.Scanner;
+
+/**
+ * Si el número es positivo, imprime "+"; si es negativo, imprime "-"; y si es 0, imprime 0.
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class Boletin__3_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
