@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * Según la figura escogida, calcula su superficie según los datos introducidos.
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class boletin_4_2 {
     public static void main(String[] args) {
         System.out.println("1: cuadrado");

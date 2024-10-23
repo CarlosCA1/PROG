@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * Según el número de DNI, imprime la letra correspondiente del mismo.
+ * @version 1.0
+ * @author Carlos Costas
+ */
+
 public class boletin_4_5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
