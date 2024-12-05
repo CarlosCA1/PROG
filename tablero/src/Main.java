@@ -15,7 +15,7 @@ public class Main {
         private static void recorrerTablero(int[][]tablero) {
             for (int i = 0; i < 5; i++) {
                 for (int j = 0; j < 5; j++) {
-                    if (tablero [i][j]>0){
+                    if (esNave(tablero [i][j])){
                         switch (tablero[i][j]) {
                             case 1:
                                 System.out.println("Submarino "+i+":"+j);
@@ -32,4 +32,8 @@ public class Main {
                         }
                 }
             }
-        }}}
+        }}
+    static boolean esNave (int valorCoordenada){
+        return valorCoordenada>0;
+    }
+}
