@@ -2,23 +2,32 @@ import java.util.Scanner;
 
 public class boletin7_4 {
     public static void main(String[] args) {
-        String [][] hundirLaFlota = {{"B", "~", "~", "B"},
-                                    {"~", "B", "~", "B"},
-                                    {"B", "~", "B", "~"},
-                                    {"~", "B", "~", "B"}
+        String[][] hundirLaFlota = {{"B", "~", "~", "B"},
+                {"~", "B", "~", "B"},
+                {"B", "~", "B", "~"},
+                {"~", "B", "~", "B"}
         };
         for (int i = 0; i < hundirLaFlota.length; i++) {
             System.out.println(" ");
             for (int j = 0; j < hundirLaFlota[i].length; j++) {
-                String flotaInicial = hundirLaFlota[i][j];
-                System.out.print(flotaInicial);
-                disparar (flotaInicial, i, j)
+                Scanner scanner = new Scanner(System.in);
+                System.out.print("Introduzca la fila: ");
+                i = scanner.nextInt();
+                System.out.print("Introduzca la columna: ");
+                j = scanner.nextInt();
+                if (hundirLaFlota[i][j] == "B") {
+                    hundirLaFlota[i][j] = "X";
+                } else {
+                    hundirLaFlota[i][j] = "0";
+                }
+                for (int k = 0; k < hundirLaFlota.length; k++) {
+                    System.out.println(" ");
+                    for (int l = 0; l < hundirLaFlota[k].length; l++) {
+                        System.out.print(hundirLaFlota[k][l]);
+                    }
             }
         }
     }
-    public static void disparar (String flotaInicial) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduzca el primer plato (empezando con mayúsculas): ");
-        String primerPlato = scanner.nextLine();
+
     }
 }
