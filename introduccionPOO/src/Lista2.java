@@ -34,8 +34,6 @@ public class Lista2 {
 
     public void añadirUltimo(int valor) {
         Nodo nuevoNodo = new Nodo(valor, null);
-
-
         if (estaVacia()) {
             nodoInicial = nuevoNodo;
         } else {
@@ -49,6 +47,48 @@ public class Lista2 {
         }
 
         tamaño++;
+    }
+
+    public void añadirPrimero (int nValor) {
+        Nodo nuevoNodo = new Nodo(nValor, this.nodoInicial);
+        this.nodoInicial = nuevoNodo;
+        this.tamaño++;
+    }
+
+    public void eliminarPrimero (){
+        if (!estaVacia()){
+            nodoInicial = nodoInicial.getNodoSiguiente();
+            tamaño--;
+        }
+    }
+    public void eliminarUltimo (){
+        if (!estaVacia()){
+            Nodo nodoAnterior =null;
+            if (tamaño != 1) {
+                Nodo nodoActual = nodoInicial;
+                while(nodoActual.getNodoSiguiente()!=null){
+                    nodoAnterior = nodoActual;
+                    nodoActual = nodoActual.getNodoSiguiente();
+                }
+                nodoAnterior.setNodoSiguiente(null);
+            } else {
+                nodoInicial=null;
+                }
+            tamaño--;
+            }
+        }
+
+        public void mostrarValoresLista(){
+            if (!estaVacia()){
+                if(tamaño!=1){
+                    Nodo nodoActual = nodoInicial;
+                    while(nodoActual.getNodoSiguiente()!=null){
+                        System.out.println(nodoActual.getValor());
+                        nodoActual=nodoActual.getNodoSiguiente();
+                    }
+                    System.out.println(nodoActual.getValor());
+                } else System.out.println(nodoInicial.getValor());
+            }
     }
 }
 
