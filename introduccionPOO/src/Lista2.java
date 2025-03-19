@@ -90,5 +90,17 @@ public class Lista2 {
                 } else System.out.println(nodoInicial.getValor());
             }
     }
+    public int getNodo(int indice){
+        if (indice>tamaño-1 || indice < 0){
+            System.out.println("Índice incorrecto, retornamos -1");
+            return -1;
+        } else{
+            Nodo nodo= nodoInicial;
+            for (int i =0; i<indice; i++){
+                nodo = nodo.getNodoSiguiente();
+            }
+            return nodo.getValor();
+        }
+    }
 }
 
