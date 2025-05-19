@@ -4,7 +4,7 @@ import java.util.*;
 public class boletin13_10 {
 
     private static Map<String, Integer> inventario = new HashMap<>();
-    private static final String FICHEIRO = "inventario.dat";
+    private static final String FICHEIRO = "/home/dam/PROGRAMACIÓN/boletin13/src/inventario.dat";
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
