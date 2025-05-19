@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExcepcionPuntoForaPrimeiroCadrante {
         Libro quijote = new Libro("Quijote", "Cervantes", 555, 40, 1);
         quijote.setTitulo ("Sesudo estudio sobre el simpático libro del Quijote");
         quijote.setAutor ("Juanjo Millas");
@@ -79,15 +79,22 @@ public class Main {
         lista.añadirUltimo(5);
         lista.añadirUltimo(7);
 
-
+        try{
         CuadradoBis cua1 = new CuadradoBis(2,1,5);
         System.out.println("Superficie cuadrada: "+ cua1.calcularArea());
-        System.out.println("Perímetro del cuadrado: " + cua1.calcularPerimetro());
-
-        Cubo cubo = new Cubo (5,3,2);
-        System.out.println("Superficie cubo: " + cubo.calcularArea());
-        System.out.println("Volumen cubo: " + cubo.calcularVolumen());
-        System.out.println("Perímetro cubo: " + cubo.calcularPerimetro());
+        } catch (ExcepcionPuntoForaPrimeiroCadrante e){
+            System.out.println(e);
+            System.out.println("Imposible crear o cadrado");
+        }
+        try {
+            Cubo cubo = new Cubo(5, -3, 2);
+            System.out.println("Superficie cubo: " + cubo.calcularArea());
+            System.out.println("Volumen cubo: " + cubo.calcularVolumen());
+            System.out.println("Perímetro cubo: " + cubo.calcularPerimetro());
+        } catch (ExcepcionPuntoForaPrimeiroCadrante e){
+            System.out.println(e);
+            System.out.println("Imposible crear o cubo");
+        }
 
         Canguro mai = new Canguro("Mai", 14);
         mai.desplazar();

@@ -6,7 +6,7 @@ public abstract class PuntoBase {
         x=0;
         y=0;
     }
-    public PuntoBase(double x, double y){
+    public PuntoBase(double x, double y) throws ExcepcionPuntoForaPrimeiroCadrante{
         setX(x);
         setY(y);
     }
@@ -15,18 +15,18 @@ public abstract class PuntoBase {
         return x;
     }
 
-    public void setX(double x) {
-        if (x<0) this.x = 0;
-        else this.x=x;
+    public void setX(double x) throws ExcepcionPuntoForaPrimeiroCadrante {
+        if (x>=0.0) this.x = x;
+        else throw new ExcepcionPuntoForaPrimeiroCadrante();
     }
 
     public double getY() {
         return y;
     }
 
-    public void setY(double y) {
-        if (y<0) this.y = 0;
-        else this.y=y;
+    public void setY(double y) throws ExcepcionPuntoForaPrimeiroCadrante{
+        if (y>=0) this.y = y;
+        else throw new ExcepcionPuntoForaPrimeiroCadrante();
     }
 
     public abstract String aCadena();

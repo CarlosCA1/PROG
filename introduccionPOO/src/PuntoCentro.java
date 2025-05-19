@@ -2,7 +2,7 @@ public class PuntoCentro extends PuntoBase{
     public PuntoCentro(){
         super();
     }
-    public PuntoCentro(double x, double y){
+    public PuntoCentro(double x, double y) throws ExcepcionPuntoForaPrimeiroCadrante{
         super(x,y);
     }
 

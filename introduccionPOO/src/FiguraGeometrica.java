@@ -3,7 +3,7 @@ public abstract class FiguraGeometrica extends PuntoBase {
         super();
     }
 
-    public FiguraGeometrica(double x, double y){
+    public FiguraGeometrica(double x, double y) throws ExcepcionPuntoForaPrimeiroCadrante{
         super(x,y);
     }
 

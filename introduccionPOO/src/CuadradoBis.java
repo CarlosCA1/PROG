@@ -5,7 +5,7 @@ public class CuadradoBis extends FiguraGeometrica{
         super();
         setLado (l);
     }
-    public CuadradoBis (double x, double y, double l){
+    public CuadradoBis (double x, double y, double l) throws ExcepcionPuntoForaPrimeiroCadrante{
         super(x,y);
         setLado(l);
     }

@@ -1,7 +1,7 @@
 public class Prisma extends Cuadrado{
     private double altura;
 
-    public Prisma (double x, double y, double l, double h) {
+    public Prisma (double x, double y, double l, double h) throws ExcepcionPuntoForaPrimeiroCadrante {
         super(x,y,l);
         altura=h;
     }

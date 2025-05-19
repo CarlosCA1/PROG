@@ -1,0 +1,5 @@
+manzana: 2
+casa: 1
+coche: 1
+periquito: 1
+alubia: 2

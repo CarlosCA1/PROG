@@ -5,7 +5,7 @@ public class Cubo extends Solido{
         super();
         lado = 0;
     }
-    public Cubo (double x, double y, double l){
+    public Cubo (double x, double y, double l) throws ExcepcionPuntoForaPrimeiroCadrante{
         super(x,y);
         setLado(l);
     }

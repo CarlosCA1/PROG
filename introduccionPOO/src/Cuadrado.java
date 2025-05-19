@@ -1,6 +1,6 @@
 public class Cuadrado extends Centro{
     private double lado;
-    public Cuadrado (double x, double y, double l){
+    public Cuadrado (double x, double y, double l) throws  ExcepcionPuntoForaPrimeiroCadrante{
         super (x,y);
         setLado(l);
     }
